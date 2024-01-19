@@ -17,7 +17,7 @@ I setup Azure Sentinel (SIEM) and connected it to a live virtual machine acting 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
+Create a virtual machine through Microsoft Azure with an open firewall: <br/>
 <img src="https://i.imgur.com/MLUCZP7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
