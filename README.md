@@ -29,7 +29,7 @@ Use PowerShell script that collects geographic data on users that attempt to log
 <img src="https://i.imgur.com/vJJ0AGU.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br />
 <br />
-Run the PowerShell script. Should successfully recieve pings and they should be sent to the log file.   <br/>
+Run the PowerShell script. Should successfully recieve pings and they should be sent to the log file   <br/>
 <img src="https://i.imgur.com/FfLoRrk.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br />
 <br />
@@ -41,11 +41,11 @@ Within PowerShell, you can information such as the username the attackers are at
 <img src="https://i.imgur.com/hu1Pbta.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br />
 <br />
-After creating a Log in Azure, you can now view the failed login information of attackers pinging the VM from your Azure account.   <br/>
+After creating a Log in Azure, you can now view the failed login information of attackers pinging the VM from your Azure account   <br/>
 <img src="https://i.imgur.com/zvmqUjx.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br/>
 <br/>
-Now that you are receiving the geodata of the attackers on your Azure account, you can now visualize this information through Microsoft Sentinel. <br/>
+Now that you are receiving the geodata of the attackers on your Azure account, you can now visualize this information through Microsoft Sentinel <br/>
 <img src="https://i.imgur.com/iLI7pzw.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br/>
 <br/>
