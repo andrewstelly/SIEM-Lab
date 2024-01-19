@@ -21,8 +21,8 @@ Create a virtual machine through Microsoft Azure with an open firewall: <br/>
 <img src="https://i.imgur.com/MLUCZP7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+After creating the virtual machine, turn off all firewall settings and ping the machine, ensuring that echo requests are allowed  <br/>
+<img src="https://i.imgur.com/5ZEd8wE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Enter the number of passes: <br/>
