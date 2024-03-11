@@ -14,7 +14,7 @@ I setup Azure Sentinel (SIEM) and connected it to a live virtual machine acting 
 
 - <b>Windows 10</b>
 
-<h2>Program walk-through:</h2>
+<h2>Program walkthrough:</h2>
 
 <p align="center">
 Create a virtual machine through Microsoft Azure with an open firewall <br/>
