@@ -18,39 +18,36 @@ I setup Azure Sentinel (SIEM) and connected it to a live virtual machine acting 
 
 <p align="center">
 Create a virtual machine through Microsoft Azure with an open firewall <br/>
-<img src="https://i.imgur.com/MLUCZP7.png" height="80%" width="80%" alt="SIEM Steps"/>
+<img src="https://i.imgur.com/wdm3BOz.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br />
 <br />
 After creating the virtual machine, turn off all firewall settings and ping the machine, ensuring that echo requests are allowed  <br/>
-<img src="https://i.imgur.com/5ZEd8wE.png" height="80%" width="80%" alt="SIEM Steps"/>
+<img src="https://i.imgur.com/zmvcJHP.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br />
 <br />
 Use PowerShell script that collects geographic data on users that attempt to log into the virtual machine <br/>
-<img src="https://i.imgur.com/vJJ0AGU.png" height="80%" width="80%" alt="SIEM Steps"/>
+<img src="https://i.imgur.com/R2ISias.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br />
 <br />
 Run the PowerShell script. Should successfully recieve pings and they should be sent to the log file   <br/>
-<img src="https://i.imgur.com/FfLoRrk.png" height="80%" width="80%" alt="SIEM Steps"/>
+<img src="https://i.imgur.com/AUaCfDL.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br />
 <br />
 These pings can also be observed in the Windows Security Log  <br/>
-<img src="https://i.imgur.com/Ut6h9sD.png" height="80%" width="80%" alt="SIEM Steps"/>
+<img src="https://i.imgur.com/mYYzTbH.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br />
 <br />
 Within PowerShell, you can information such as the username the attackers are attempting, which in my case was most commonly administrator <br/>
-<img src="https://i.imgur.com/hu1Pbta.png" height="80%" width="80%" alt="SIEM Steps"/>
+<img src="https://i.imgur.com/PEYMBx5.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br />
 <br />
 After creating a Log in Azure, you can now view the failed login information of attackers pinging the VM from your Azure account   <br/>
-<img src="https://i.imgur.com/zvmqUjx.png" height="80%" width="80%" alt="SIEM Steps"/>
+<img src="https://i.imgur.com/JAEikFd.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br/>
 <br/>
 Now that you are receiving the geodata of the attackers on your Azure account, you can now visualize this information through Microsoft Sentinel <br/>
-<img src="https://i.imgur.com/iLI7pzw.png" height="80%" width="80%" alt="SIEM Steps"/>
-<br/>
-<br/>
 Complete Map <br/>
-<img src="https://i.imgur.com/iaqHBlb.png" height="80%" width="80%" alt="SIEM Steps"/>
+<img src="https://i.imgur.com/nbDbSI1.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br/>
 </p>
 
