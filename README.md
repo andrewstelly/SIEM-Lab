@@ -46,6 +46,9 @@ After creating a Log in Azure, you can now view the failed login information of 
 <br/>
 <br/>
 Now that you are receiving the geodata of the attackers on your Azure account, you can now visualize this information through Microsoft Sentinel <br/>
+<img src="https://i.imgur.com/xhtisw5.png" height="80%" width="80%" alt="SIEM Steps"/>
+<br/>
+<br/>
 Complete Map <br/>
 <img src="https://i.imgur.com/nbDbSI1.png" height="80%" width="80%" alt="SIEM Steps"/>
 <br/>
