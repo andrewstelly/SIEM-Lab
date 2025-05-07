@@ -39,25 +39,25 @@ Verify logs are being written correctly
 
 Observe attempts in the Windows Event Log (Security log)  
 <br/>
-<img src="./images/Part5.png" width="80%" alt="Security Log"/>
+<img src="./images/Part 5.png" width="80%" alt="Security Log"/>
 <br/><br/>
 
 View usernames being targeted, most often 'administrator'  
 <br/>
-<img src="./images/Part6.png" width="80%" alt="Username Enumeration"/>
+<img src="./images/Part 6.png" width="80%" alt="Username Enumeration"/>
 <br/><br/>
 
 Use Azure Monitor to capture failed login attempts  
 <br/>
-<img src="./images/Part7.png" width="80%" alt="Azure Log Analytics"/>
+<img src="./images/Part 7.png" width="80%" alt="Azure Log Analytics"/>
 <br/><br/>
 
 Visualize attacker geolocation data in Microsoft Sentinel  
 <br/>
-<img src="./images/Part8.png" width="80%" alt="Sentinel Visualization"/>
+<img src="./images/Part 8.png" width="80%" alt="Sentinel Visualization"/>
 <br/><br/>
 
 Final attack map showing global brute-force RDP attempts  
 <br/>
-<img src="./images/Part9.png" width="80%" alt="Final Sentinel Map"/>
+<img src="./images/Part 9.png" width="80%" alt="Final Sentinel Map"/>
 </p>
