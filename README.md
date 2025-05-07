@@ -1,65 +1,63 @@
-<h1>SIEM Honeypot Lab</h1>
+# SIEM Honeypot Lab
 
-<h2>Description</h2>
-I setup Azure Sentinel (SIEM) and connected it to a live virtual machine acting as a honey pot. I observed live attacks (RDP Brute Force) from all around the world. I used a custom PowerShell script to look up the attackers Geolocation information and plot it on the Azure Sentinel Map!
-<br />
+## Description  
+I set up Azure Sentinel (SIEM) and connected it to a live virtual machine acting as a honeypot. I observed real-time brute-force RDP attacks from around the world. A custom PowerShell script collected geolocation data of attackers and plotted it on the Azure Sentinel Map.
 
+---
 
-<h2>Languages and Utilities Used</h2>
+## Languages and Utilities Used
+- **PowerShell**  
+- **Azure**
 
-- <b>PowerShell</b> 
-- <b>Azure</b>
+## Environments Used
+- **Windows 10**
 
-<h2>Environments Used </h2>
+---
 
-- <b>Windows 10</b>
-
-<h2>Program walkthrough:</h2>
+## Program Walkthrough
 
 <p align="center">
-Create a virtual machine through Microsoft Azure with an open firewall <br/>
-<img src="https://i.imgur.com/wdm3BOz.png" height="80%" width="80%" alt="SIEM Steps"/>
-<br />
-<br />
-After creating the virtual machine, turn off all firewall settings and ping the machine, ensuring that echo requests are allowed  <br/>
-<img src="https://i.imgur.com/zmvcJHP.png" height="80%" width="80%" alt="SIEM Steps"/>
-<br />
-<br />
-Use PowerShell script that collects geographic data on users that attempt to log into the virtual machine <br/>
-<img src="https://i.imgur.com/R2ISias.png" height="80%" width="80%" alt="SIEM Steps"/>
-<br />
-<br />
-Run the PowerShell script. Should successfully recieve pings and they should be sent to the log file   <br/>
-<img src="https://i.imgur.com/AUaCfDL.png" height="80%" width="80%" alt="SIEM Steps"/>
-<br />
-<br />
-These pings can also be observed in the Windows Security Log  <br/>
-<img src="https://i.imgur.com/mYYzTbH.png" height="80%" width="80%" alt="SIEM Steps"/>
-<br />
-<br />
-Within PowerShell, you can information such as the username the attackers are attempting, which in my case was most commonly administrator <br/>
-<img src="https://i.imgur.com/PEYMBx5.png" height="80%" width="80%" alt="SIEM Steps"/>
-<br />
-<br />
-After creating a Log in Azure, you can now view the failed login information of attackers pinging the VM from your Azure account   <br/>
-<img src="https://i.imgur.com/JAEikFd.png" height="80%" width="80%" alt="SIEM Steps"/>
+Create a virtual machine through Microsoft Azure with an open firewall  
 <br/>
-<br/>
-Now that you are receiving the geodata of the attackers on your Azure account, you can now visualize this information through Microsoft Sentinel <br/>
-<img src="https://i.imgur.com/xhtisw5.png" height="80%" width="80%" alt="SIEM Steps"/>
-<br/>
-<br/>
-Complete Map <br/>
-<img src="https://i.imgur.com/nbDbSI1.png" height="80%" width="80%" alt="SIEM Steps"/>
-<br/>
-</p>
+<img src="./images/Part1.png" width="80%" alt="Azure VM Setup"/>
+<br/><br/>
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+After creating the VM, disable the firewall and ensure ICMP Echo requests work (pingable)  
+<br/>
+<img src="./images/Part2.png" width="80%" alt="Firewall Disabled"/>
+<br/><br/>
+
+Run a PowerShell script to log geolocation data of login attempts  
+<br/>
+<img src="./images/Part3.png" width="80%" alt="PowerShell Script"/>
+<br/><br/>
+
+Verify logs are being written correctly  
+<br/>
+<img src="./images/Part4.png" width="80%" alt="Log Output"/>
+<br/><br/>
+
+Observe attempts in the Windows Event Log (Security log)  
+<br/>
+<img src="./images/Part5.png" width="80%" alt="Security Log"/>
+<br/><br/>
+
+View usernames being targeted, most often 'administrator'  
+<br/>
+<img src="./images/Part6.png" width="80%" alt="Username Enumeration"/>
+<br/><br/>
+
+Use Azure Monitor to capture failed login attempts  
+<br/>
+<img src="./images/Part7.png" width="80%" alt="Azure Log Analytics"/>
+<br/><br/>
+
+Visualize attacker geolocation data in Microsoft Sentinel  
+<br/>
+<img src="./images/Part8.png" width="80%" alt="Sentinel Visualization"/>
+<br/><br/>
+
+Final attack map showing global brute-force RDP attempts  
+<br/>
+<img src="./images/Part9.png" width="80%" alt="Final Sentinel Map"/>
+</p>
